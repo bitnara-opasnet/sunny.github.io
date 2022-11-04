@@ -75,39 +75,3 @@ h1 {
     bottom: 0;
     color: white;
 }
-
-
-
-
-
-#countdown {
-    position: absolute;
-    top: 30%;
-    left: 32%;
-    margin: -50px 0 0 -50px;
-    /* left: 35%; */
-    font-size: 3em;
-    font-weight: 100;
-    color: white;
-
-}
-
-#countdown div {
-    display: inline-block;
-    min-width: 140px;
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid #030d52;
-    margin: 5px;
-    text-align: center;
-
-}
-
-#countdown span {
-    color: #ffffff;
-    display: block;
-    font-size: .35em;
-    font-weight: 700;
-    text-align: center;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
