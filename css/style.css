@@ -1,0 +1,113 @@
+body, html {
+    margin:0;
+    height: 100%;
+    overflow:hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 650;
+    color: white;
+}
+
+
+/* momentum login css copy */
+#login-form input{
+    width: 100%;
+    padding: 0;
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    font-size: 40px;
+}  
+
+
+#clock {
+    text-align: center;
+    font-size: 200px;
+    color: white;
+    font-weight: 500;
+}
+
+
+#greeting {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+#logout-button {
+    border-radius: 24px;
+    background-color: #fff;
+    color: gray;
+    border:none;  
+    margin:auto;
+    display:block;
+}
+
+
+#quote {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    color: white;
+}
+
+
+
+
+
+#countdown {
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    margin: -50px 0 0 -50px;
+    /* left: 35%; */
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+
+}
+
+#countdown div {
+    display: inline-block;
+    min-width: 140px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #030d52;
+    margin: 5px;
+    text-align: center;
+
+}
+
+#countdown span {
+    color: #ffffff;
+    display: block;
+    font-size: .35em;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
