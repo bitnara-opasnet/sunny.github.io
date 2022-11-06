@@ -3,6 +3,10 @@ const loginInput = loginForm.querySelector("#login-form input");
 const greetingForm = document.querySelector("#greeting-form"); 
 const logout = document.querySelector("#logout-button");
 const quoteContainer = document.querySelector("#quote");
+const weatherContainer = document.querySelector("#weather");
+const todoContainer = document.querySelector("#todoContainer");
+
+
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username"
 
@@ -34,6 +38,8 @@ function showLoginForm() {
     localStorage.clear();
     greetingForm.classList.add(HIDDEN_CLASSNAME);
     quoteContainer.classList.add(HIDDEN_CLASSNAME);
+    weatherContainer.classList.add(HIDDEN_CLASSNAME);
+    todoContainer.classList.add(HIDDEN_CLASSNAME);
     loginForm.classList.remove(HIDDEN_CLASSNAME);
 };
 
@@ -53,6 +59,9 @@ if (savedUsername) {
     paintGreetings(savedUsername);
     showLogoutBtn();
     quoteContainer.classList.remove(HIDDEN_CLASSNAME);
+    weatherContainer.classList.remove(HIDDEN_CLASSNAME);
+    todoContainer.classList.remove(HIDDEN_CLASSNAME);
+
 } else {
     showLoginForm ();
     loginForm.addEventListener("submit", onLoginSubmit);
